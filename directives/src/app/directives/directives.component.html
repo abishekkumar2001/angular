@@ -1,0 +1,115 @@
+<h1>Directives Demo</h1>
+
+<!-- looping a array and printing it in list -->
+<h3>{{ title }}</h3>
+<ul>
+    <li *ngFor = "let fruit of fruits">
+         {{ fruit }} 
+    </li>
+</ul>
+
+<!-- looping array of objects using the structural directive ngFor Example1-->
+<h3 [innerText]="'World Wonders and their locations'"></h3>
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>Index</th>
+                <th>World Wonder</th>
+                <th>Place</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let wonders of worldWonders; let i=index">
+                <td>{{ i+1 }}</td>
+                <td>{{ wonders.name }}</td>
+                <td>{{ wonders.location }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<br><br>
+
+<!-- ngSwitch -->
+<p>ngSwitch Demo</p>
+<label for="">Enter the number</label>
+<br>
+<input type="text" [(ngModel)]="num">
+<div [ngSwitch]="num">
+    <div *ngSwitchCase="1">One</div>
+    <div *ngSwitchCase="2">Two</div>
+    <div *ngSwitchCase="3">Three</div>
+    <div *ngSwitchCase="4">Four</div>
+    <div *ngSwitchCase="5">Five</div>
+    <div *ngSwitchCase="6">Six</div>
+    <div *ngSwitchCase="7">Seven</div>
+</div>
+
+<!-- ngIf -->
+<p>ngIf Demo</p>
+<div class="row">
+    <label for="">checkbox <input type="checkbox" [(ngModel)]="showMe"></label>
+</div>
+<p *ngIf="showMe; else elseBlock">Check box is checked</p>
+<!-- <p *ngIf="!showMe">Check box is not checked</p> -->
+
+<ng-template #elseBlock>
+    <p>Check box is not checked</p>
+</ng-template>
+
+<!-- A template can be created even for if block
+<div class="row">
+    <label for="">checkbox <input type="checkbox" [(ngModel)]="showMe"></label>
+</div>
+<p *ngIf="showMe; then thenBlock, else elseBlock">Check box is checked</p>
+
+ <ng-template #thenBlock>
+    <p>Check box is checked</p>
+</ng-template>
+
+<ng-template #elseBlock>
+    <p>Check box is not checked</p>
+</ng-template> -->
+
+<!-- Demo of ngClass -->
+<input type="checkbox" [(ngModel)]="enableGreen" >
+<div [ngClass]="{'demo':enableGreen}">
+    Sachin Tendulkar
+</div>
+<div [ngClass]="['primary','big']">
+    Welcome to Angular!
+</div>
+<div [ngClass]="{'secondary':true,'small':false}">
+    Angular
+</div>
+
+<!-- ngFor
+Example2 -->
+<h1>{{ marks }}</h1>
+<!-- <ul>
+    <li *ngFor="let marks of mark" id="black">
+        {{marks.name }} => {{ marks.tamil }} , {{ marks.english }}, {{ marks.maths }}
+    </li>
+</ul> -->
+
+<table>
+    <thead>
+        <tr>
+            <th>S.No</th>
+            <th>Name</th>
+            <th>Tamil</th>
+            <th>English</th>
+            <th>Maths</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let marks of mark; let i=index">
+            <td>{{ i+1 }}</td>
+            <td>{{ marks.name }}</td>
+            <td>{{ marks.tamil }}</td>
+            <td>{{ marks.english }}</td>
+            <td>{{ marks.maths }}</td>
+        </tr>
+    </tbody>
+</table>
