@@ -1,0 +1,13 @@
+<h3>Form Component</h3>
+<form action="">
+    <label for="">Car Name</label>
+    <input type="text" name="carname" [(ngModel)]="carName">
+    <button (click)="addCar()">Submit</button>
+</form>
+
+<br><br>
+<app-list [carsInput]="cars"></app-list>
+<!-- since list is the child of form -->
+
+<!-- Sending data from parent to child using @Input
+Sending data from child to parent using @Output -->
