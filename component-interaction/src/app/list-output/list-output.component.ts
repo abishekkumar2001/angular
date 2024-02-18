@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-list-output',
@@ -12,7 +12,7 @@ export class ListOutputComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  @Input('carsInput') cars:string[]=[];
+  cars:string[]=[];
 
   carData(Data:string[]){
     this.cars = Data;
