@@ -15,7 +15,7 @@ export class ListOutputComponent implements OnInit {
   @Input('carsInput') cars:string[]=[];
 
   carData(Data:string[]){
-    this.cars = Data
+    this.cars = Data;
   }
 
 }
