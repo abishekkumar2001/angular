@@ -1,0 +1,37 @@
+<h3>Injectable angular forms</h3>
+<form name="form" #f="ngForm" (ngSubmit)="f.form.valid && onSubmit()">
+    <div>
+      <label for="name">Name:</label>
+      <input 
+        type="text" 
+        id="name" 
+        name="name" 
+        [(ngModel)]="formData.name" 
+        #name="ngModel"
+        [ngClass]="{'is-invalid':f.submitted && name.invalid,'is-valid':name.valid}"
+        required
+       />
+       <div class="invalid-feedback">
+            <div>First Name is Required</div>
+        </div>
+    </div>
+    <br>
+    <div>
+      <label for="email">Email:</label>
+      <input 
+        type="email" 
+        id="email" 
+        name="email" 
+        [(ngModel)]="formData.email" 
+        #email="ngModel"
+        [ngClass]="{'is-invalid':f.submitted && email.invalid,'is-valid':email.valid}"
+        required
+      /> 
+    <div class="invalid-feedback">
+        <div>Email is Required</div>
+    </div>
+    </div>
+    <br>
+    <button type="submit">Submit</button>
+  </form>
+  
