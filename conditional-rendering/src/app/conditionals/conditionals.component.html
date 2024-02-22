@@ -1,0 +1,31 @@
+<h1>Conditional Rendering</h1>
+
+<h3>Condition based on If</h3>
+
+<label>Checkbox</label>
+<input type="checkbox" [(ngModel)]="clicked">
+
+<div *ngIf="clicked; else elseBlock">
+    <h3>Checkbox is checked</h3>
+</div>
+
+<ng-template #elseBlock>
+    <h3>Check box is not checked</h3>
+</ng-template>
+
+<h3>Condition Based on Switch</h3>
+<input type="text" [(ngModel)]="month">
+<div [ngSwitch]="month">
+    <div *ngSwitchCase="1">The First month is <b>January</b></div>
+    <div *ngSwitchCase="2">The Second month is <b>February</b></div>
+    <div *ngSwitchCase="3">The Third month is <b>March</b></div>
+    <div *ngSwitchCase="4">The Fourth month is <b>April</b></div>
+    <div *ngSwitchCase="5">The Fifth month is <b>May</b></div>
+    <div *ngSwitchCase="6">The Sixth month is <b>June</b></div>
+    <div *ngSwitchCase="7">The Seventh month is <b>July</b></div>
+    <div *ngSwitchCase="8">The Eighth month is <b>August</b></div>
+    <div *ngSwitchCase="9">The Ninth month is <b>September</b></div>
+    <div *ngSwitchCase="10">The Tenth month is <b>October</b></div>
+    <div *ngSwitchCase="11">The Eleventh month is <b>November</b></div>
+    <div *ngSwitchCase="12">The Twelfth month is <b>December</b></div>
+</div>
