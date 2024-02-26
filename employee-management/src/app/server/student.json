@@ -1,0 +1,227 @@
+{
+  "students": [
+    {
+      "name": "Aravind",
+      "marks": 480,
+      "email": "aravind2001@gmail.com",
+      "phone": "9876872343",
+      "id": "a3f9"
+    },
+    {
+      "name": "Emily Johnson",
+      "marks": 450,
+      "email": "emily.johnson@gmail.com",
+      "phone": "8956747895",
+      "id": "9305"
+    },
+    {
+      "name": "Michael Williams",
+      "marks": 490,
+      "email": "michael.williams@gmail.com",
+      "phone": "8899776655",
+      "id": "17b4"
+    },
+    {
+      "name": "Emma Brown",
+      "marks": 470,
+      "email": "emma.brown@gmail.com",
+      "phone": "7676865856",
+      "id": "1014"
+    },
+    {
+      "name": "Daniel Jones",
+      "marks": 455,
+      "email": "daniel.jones@gmail.com",
+      "phone": "6734576161",
+      "id": "4d57"
+    },
+    {
+      "name": "Olivia Martinez",
+      "marks": 485,
+      "email": "olivia.martinez@gmail.com",
+      "phone": "8955577767",
+      "id": "4413"
+    },
+    {
+      "name": "James Davis",
+      "marks": 465,
+      "email": "james.davis@gmail.com",
+      "phone": "9797979797",
+      "id": "70ae"
+    },
+    {
+      "name": "Sophia Garcia",
+      "marks": 475,
+      "email": "sophia.garcia@gmail.com",
+      "phone": "8989898989",
+      "id": "012d"
+    },
+    {
+      "name": "Alexander Rodriguez",
+      "marks": 485,
+      "email": "alexander.rodriguez@gmail.com",
+      "phone": "9129123453",
+      "id": "08d6"
+    },
+    {
+      "name": "Ava Hernandez",
+      "marks": 455,
+      "email": "ava.hernandez@gmail.com",
+      "phone": "8736365656",
+      "id": "19aa"
+    },
+    {
+      "name": "William Wilson",
+      "marks": 470,
+      "email": "william.wilson@gmail.com",
+      "phone": "8187655671",
+      "id": "4dcb"
+    },
+    {
+      "name": "Isabella Lopez",
+      "marks": 495,
+      "email": "isabella.lopez@gmail.com",
+      "phone": "8765434567",
+      "id": "4458"
+    },
+    {
+      "name": "Ethan Gonzalez",
+      "marks": 465,
+      "email": "ethan.gonzalez@gmail.com",
+      "phone": "6578342312",
+      "id": "9cfe"
+    },
+    {
+      "name": "Mia Perez",
+      "marks": 480,
+      "email": "mia.perez@gmail.com",
+      "phone": "9292987878",
+      "id": "ea6d"
+    },
+    {
+      "name": "Jacob Smith",
+      "marks": 455,
+      "email": "jacob.smith@gmail.com",
+      "phone": "9090878765",
+      "id": "160f"
+    },
+    {
+      "name": "Charlotte Johnson",
+      "marks": 470,
+      "email": "charlotte.johnson@gmail.com",
+      "phone": "9122198765",
+      "id": "92ba"
+    },
+    {
+      "name": "Noah Williams",
+      "marks": 485,
+      "email": "noah.williams@gmail.com",
+      "phone": "9843643652",
+      "id": "ff7e"
+    },
+    {
+      "name": "Abigail Brown",
+      "marks": 465,
+      "email": "abigail.brown@gmail.com",
+      "phone": "9977654561",
+      "id": "bb63"
+    },
+    {
+      "name": "Liam Jones",
+      "marks": 480,
+      "email": "liam.jones@gmail.com",
+      "phone": "8928252516",
+      "id": "5d7d"
+    },
+    {
+      "name": "Harper Martinez",
+      "marks": 475,
+      "email": "harper.martinez@gmail.com",
+      "phone": "6878564212",
+      "id": "9c30"
+    },
+    {
+      "name": "Evelyn Davis",
+      "marks": 460,
+      "email": "evelyn.davis@gmail.com",
+      "phone": "9089874567",
+      "id": "6d8d"
+    },
+    {
+      "name": "Benjamin Garcia",
+      "marks": 490,
+      "email": "benjamin.garcia@gmail.com",
+      "phone": "8761456979",
+      "id": "86f1"
+    },
+    {
+      "name": "Amelia Rodriguez",
+      "marks": 475,
+      "email": "amelia.rodriguez@gmail.com",
+      "phone": "7186457312",
+      "id": "a6b7"
+    },
+    {
+      "name": "Lucas Hernandez",
+      "marks": 465,
+      "email": "lucas.hernandez@gmail.com",
+      "phone": "9986745623",
+      "id": "06b2"
+    },
+    {
+      "name": "Mila Wilson",
+      "marks": 470,
+      "email": "mila.wilson@gmail.com",
+      "phone": "9199874567",
+      "id": "a6b9"
+    },
+    {
+      "name": "Henry Lopez",
+      "marks": 485,
+      "email": "henry.lopez@gmail.com",
+      "phone": "7234567234",
+      "id": "87ff"
+    },
+    {
+      "name": "Ella Gonzalez",
+      "marks": 455,
+      "email": "ella.gonzalez@gmail.com",
+      "phone": "6387234156",
+      "id": "0dec"
+    },
+    {
+      "name": "Aiden Perez",
+      "marks": 480,
+      "email": "aiden.perez@gmail.com",
+      "phone": "7352346172",
+      "id": "b379"
+    },
+    {
+      "name": "Scarlett Smith",
+      "marks": 465,
+      "email": "scarlett.smith@gmail.com",
+      "phone": "8866345212",
+      "id": "5907"
+    },
+    {
+      "name": "Matthew Johnson",
+      "marks": 490,
+      "email": "matthew.johnson@gmail.com",
+      "phone": "9321563457",
+      "id": "68b2"
+    },
+    {
+      "name": "Avery Williams",
+      "marks": 475,
+      "email": "avery.williams@gmail.com",
+      "phone": "9845346782",
+      "id": "e569"
+    },
+    {
+      "name": "Akshay",
+      "marks": "450",
+      "email": "akshay1940@gmail.com",
+      "phone": "8118566543"
+    }
+  ]
+}

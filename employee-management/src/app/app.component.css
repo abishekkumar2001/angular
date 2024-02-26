@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    justify-content: space-between; /* To create space between components */
+  }
+  
+  .left,
+  .right {
+    width: 50%; /* Each component takes half of the container */
+  }
+  
+
+
+  

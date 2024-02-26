@@ -1,0 +1,39 @@
+<div>
+    <h1>Employee Management</h1>
+    <form name="form" #employeeForm="ngForm" (ngSubmit)="employeeForm.form.valid && addEmployee()">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" [(ngModel)]="employeeName" required>
+      
+      <label for="department">Department:</label>
+      <select id="department" name="department" [(ngModel)]="selectedDepartment" required>
+        <option *ngFor="let department of departments" [value]="department">{{ department }}</option>
+      </select>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" [(ngModel)]="dob"  [max]="maxDate" required>
+
+      
+      <!-- <button (click)="addEmployee()">Add Employee</button> -->
+      <button type="submit" [disabled]="!employeeName || !selectedDepartment || !dob">Add Employee</button>
+
+    </form>
+  
+    <h3>Employee List</h3>
+    <ul>
+      <ng-container *ngFor="let employee of pagedEmployees">
+        <li>{{ employee.name }} - {{ employee.department }} - {{ employee.dob | date }}</li>
+      </ng-container>
+    </ul>
+    
+  
+    <div>
+      <button (click)="previousPage()">Previous</button>
+      <span>{{ currentPage }}</span>
+      <button (click)="nextPage()">Next</button>
+    </div>
+  </div>
+  
+
+
+  <!-- Note To set minimum
+  <input type="date" id="dob" name="dob" [(ngModel)]="dob" [min]="minDate" [max]="maxDate" required> -->
